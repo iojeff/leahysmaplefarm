@@ -602,6 +602,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .img-thumbnail {
@@ -3942,7 +3943,7 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem 0.025rem;
   color: #198754;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -11342,7 +11343,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #0f5132;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11364,24 +11365,23 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #198754;
+  color: #fff;
   letter-spacing: 0.0625em;
+  font-weight: 400;
+  padding: 0.25rem 0;
 }
 .navbar.fixed-top.navbar-shrink .navbar-nav .nav-item .nav-link {
   color: #fff !important;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #198754;
-  font-weight: 700;
-}
+
 
 @media (min-width: 992px) {
   #mainNav {
     padding-top: .5rem;
     padding-bottom: .5rem;
     border: none;
-    background-color: rgb(248 248 248 / 75%);
+    background-color: rgb(248 248 248 / 40%);
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11409,6 +11409,25 @@ p {
   }
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link.active, 
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #198754;
+    font-weight: 700;
+    border-bottom: 2px solid #198754;
+  }
+
+  #mainNav.navbar.fixed-top.navbar-shrink .navbar-nav .nav-item .nav-link.active,
+  #mainNav.navbar.fixed-top.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: #198754;
+    font-weight: 700;
+        margin-bottom: 0.35rem;
+    margin-bottom: 0.35rem;
   }
 }
 header.masthead {
